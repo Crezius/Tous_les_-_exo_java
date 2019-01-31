@@ -1,0 +1,11 @@
+
+public class Principale {
+	
+	public static Connect conn = new Connect("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/base_carnet?autoReconnect=true&useSSL=false", "user_carnet", "rtlry");
+
+	// fonction main, premi�re fonnction lanc�e lors de l'execution
+	public static void main(String[] args) {
+		@SuppressWarnings("unused")
+		GUI gui = new GUI(500, 500, true, "J'aime le chocolat");
+	}
+}
